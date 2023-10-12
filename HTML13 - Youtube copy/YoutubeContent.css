@@ -1,0 +1,109 @@
+/*Youtube-Content-Grid*/
+/*Content-Parent*/
+.content-parent {
+  margin-left: 120px;
+  margin-top: 68.5px;
+  width: fit-content;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-decoration: none;
+}
+/*Content-Boxes*/
+.content-box {
+  width: 100%;
+  aspect-ratio: 16/13;
+  gap: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding-right: 10px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .content-parent {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+#thumbnail {
+  width: 100%;
+  min-width: 100px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+#time-stamp {
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 2px 4px;
+  right: 15px;
+  bottom: 110px;
+}
+
+#chanel-logo {
+  display: flex;
+  width: 30px;
+}
+
+.content-information {
+  padding-left: 5px;
+  padding-top: 5px;
+  display: flex;
+  align-items: top;
+}
+
+.video-information {
+  margin-left: 5px;
+}
+
+#youtube-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#youtube-chanel-name {
+  margin-top: 5px;
+  color: gray;
+}
+
+#youtube-video-information {
+  margin-top: 4px;
+  color: gray;
+}
+
+/*Chanel-Display-Hover*/
+.content-information .chanel-logo-hover-information {
+  width: fit-content;
+  height: 65px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: -10px;
+  left: 0;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(80, 80, 80, 1);
+  opacity: 0;
+  background-color: white;
+  pointer-events: none;
+}
+
+.content-information:hover .chanel-logo-hover-information {
+  opacity: 1;
+  transition: 0.15s;
+}
+
+#chanel-logo-hover {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#hover-chanel-info {
+  margin-right: 10px;
+}
